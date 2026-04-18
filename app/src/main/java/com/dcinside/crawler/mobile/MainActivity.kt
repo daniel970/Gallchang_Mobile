@@ -45,6 +45,9 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val PAGE_SIZE = 50
+
+        /** 디시 갤 ID 허용 문자: 영문/숫자/언더스코어. URL/특수문자 입력 차단용. */
+        private val BOARD_ID_PATTERN = Regex("^[A-Za-z0-9_]+$")
     }
 
     private val notificationPermission = registerForActivityResult(
@@ -167,10 +170,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onStartClicked() {
-        val raw = binding.editGallery.text?.toString()?.trim().orEmpty()
-        val boardId = GalleryUrlParser.parseGalleryUrl(raw).trim()
+        val boardId = binding.editGallery.text?.toString()?.trim().orEmpty()
         if (boardId.isBlank()) {
             toast(getString(R.string.msg_need_gallery))
+            return
+        }
+        if (!BOARD_ID_PATTERN.matches(boardId)) {
+            toast(getString(R.string.msg_invalid_gallery_id))
             return
         }
 

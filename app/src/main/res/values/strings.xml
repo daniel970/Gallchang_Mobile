@@ -3,7 +3,7 @@
     <string name="app_name">갤창랭킹 모바일</string>
 
     <string name="label_input_section">갤러리 설정</string>
-    <string name="hint_gallery">갤러리 URL 또는 갤 ID</string>
+    <string name="hint_gallery">갤 ID</string>
 
     <!-- 수집 기준: 페이지 / 날짜 -->
     <string name="label_range_mode">수집 기준</string>
@@ -55,7 +55,8 @@
     <string name="fmt_date_display">%1$d. %2$02d. %3$02d</string>
 
     <!-- 유효성 메시지 -->
-    <string name="msg_need_gallery">갤러리 URL 또는 갤 ID를 입력해주세요.</string>
+    <string name="msg_need_gallery">갤 ID를 입력해주세요.</string>
+    <string name="msg_invalid_gallery_id">갤 ID는 영문/숫자/밑줄(_)만 사용할 수 있어요. URL이 아닌 ID만 입력해주세요.</string>
     <string name="msg_invalid_page">페이지 범위를 확인해주세요. (시작 ≤ 끝, 1 이상)</string>
     <string name="msg_invalid_date">날짜 범위를 확인해주세요. (시작 ≤ 끝)</string>
     <string name="msg_need_dates">시작/끝 날짜를 모두 선택해주세요.</string>
