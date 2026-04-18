@@ -75,6 +75,9 @@
     <string name="fmt_range_pages">페이지 %1$d~%2$d</string>
     <string name="fmt_range_dates">%1$s ~ %2$s</string>
 
+    <!-- 크레딧 -->
+    <string name="app_credit">Made by DYK · © 2026</string>
+
     <!-- 포그라운드 서비스 / 알림 -->
     <string name="noti_channel_name">수집 진행 상태</string>
     <string name="noti_channel_desc">백그라운드에서 크롤링이 계속 진행되도록 유지합니다.</string>
